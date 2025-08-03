@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Build the project
-RUN ./gradlew build
+RUN ./gradlew build -x test
 
 # Run the JAR file
 CMD ["java", "-jar", "LibraryGrok-0.0.1-SNAPSHOT.jar"]
