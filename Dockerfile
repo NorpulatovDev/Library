@@ -11,4 +11,4 @@ COPY . .
 RUN ./gradlew build -x test
 
 # Run the JAR file
-CMD ["java", "-jar", "build/libs/app.jar"]
+CMD ["java", "-jar", "build/libs/LibraryGrok-0.0.1-SNAPSHOT.jar"]
